@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<title>
+	SAMPLE WEBSITE
+</title>
+
+<body>
+	<section>
+		<div class="wrapper">
+			<div class="section-title">
+				<label>Guaranteed Higher Scores! Only with easyMath</label>
+			</div>
+			<div class="container">
+				<div class="wrapped-container">
+					<div class="tab">
+						<button class="yearly tabTitle inactive" onclick="showTabData(event, 'yearly'); showYearlyData()">Yearly Courses</button>
+						<button class="monthly tabTitle inactive" onclick="showTabData(event, 'monthly'); showMonthlyData()">Monthly
+							Courses</button>
+					</div>
+					<div id="yearly" class="tabcontent">
+						<div class="inner-tabcontent">
+							<div class="grade">
+								<select name="grades" onchange="yearlyGradeChange(event)">
+									<option value="Grade 6">Grade 6</option>
+									<option value="Grade 7">Grade 7</option>
+									<option value="Grade 8">Grade 8</option>
+									<option value="Grade 9">Grade 9</option>
+									<option value="Grade 10">Grade 10</option>
+									<option value="Grade 11">Grade 11</option>
+									<option value="Grade 12">Grade 12</option>
+								</select>
+								<div id="yearly-grade-filter" class="tab"></div>
+							</div>
+						</div>
+						<div class="second-layer"></div>
+						<div class="third-layer">
+							<label> Course Topics Include </label>
+							<div class="topics-collection">
+								<!-- <div class="course-topics">
+									<p class="topic">Introduction</p>
+									<p class="description">Matrices and Determinants ! Continuity and Differentiability ! Integral Calculus ! Differential Equations ! Vector Algebra ! Three Dimensional Geometry ! Statistics and Probability ! Mathematical Reasoning</p>
+								</div>
+								<div class="course-topics">
+									<p class="topic">Introduction</p>
+									<p class="description">Matrices and Determinants ! Continuity and Differentiability ! Integral Calculus ! Differential Equations ! Vector Algebra ! Three Dimensional Geometry ! Statistics and Probability ! Mathematical Reasoning</p>
+								</div>
+								<div class="course-topics">
+									<p class="topic">Introduction</p>
+									<p class="description">Matrices and Determinants ! Continuity and Differentiability ! Integral Calculus ! Differential Equations ! Vector Algebra ! Three Dimensional Geometry ! Statistics and Probability ! Mathematical Reasoning</p>
+								</div> -->
+							</div>
+						</div>
+					</div>
+	
+					<div id="monthly" class="tabcontent">
+						<div class="inner-tabcontent">
+							<div class="grade">
+								<select name="gradess" onchange="gradeChange(event)">
+									<option value="Grade 6">Grade 6</option>
+									<option value="Grade 7">Grade 7</option>
+									<option value="Grade 8">Grade 8</option>
+									<option value="Grade 9">Grade 9</option>
+									<option value="Grade 10">Grade 10</option>
+									<option value="Grade 11">Grade 11</option>
+									<option value="Grade 12">Grade 12</option>
+								</select>
+								<div id="grade-filter" class="tab"></div>
+							</div>
+						</div>
+	
+						<div class="parent grade-table-data">
+							<div class="child grade-data">
+
+								<div class="mobile-visibility">
+									<table></table>
+								</div>
+
+								<div class="desktop-visibility">
+									<table></table>
+									<!-- <div class="some">
+										<div>
+											<input type="radio" id="html" name="fav_language" value="HTML">
+										</div>
+										
+										<div>
+											<label for="html">
+												<div>
+													<label class="month-count"> 1 Month</label><p class="refund"> Money Refund Same Day* </p>
+												</div>
+											</label>
+										</div>
+										<div>
+											<label for="html">
+												<div>
+													<p class="price">₹ 16200</p><label class="discount">25% OFF</label>
+												</div>
+											</label>
+										</div>
+										<div>
+											<label for="html">
+												<div>
+													<label class="price-per-session">₹ 270 per session</label><p class="session-count">45 Sessions</p>
+												</div>
+											</label>
+										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+				<div class="monthly footer">
+					<div class="footer-section">
+						<div>
+							<label>Monthly classes let you choose <br> your own course topics</label>
+						</div>
+						<div>
+							<label>Each session lasts 45 minutes</label>
+						</div>
+						<div>
+							<button class="button button1">Book Now</button>
+						</div>
+					</div>
+					<div class="terms-condition">
+						<label> Refund same day <u> terms & conditions </u> apply <sup>*</sup> </label>
+					</div>
+				</div>
+				<div class="parent-yearly-footer">
+					<div class="yearly footer">
+						<div class="inner-section">
+							<label> Filling out soon </label>
+							<p class="seats">Vacant Seats <span>100 seats</span> </p>
+							<p>Not a classroom, but 1:1 sessions.</p>
+						</div>
+	
+						<div class="inner-section">
+							<div class="offer">
+								<label> 50% OFF </label>
+							</div>
+							<p class="subscription">Subscription Cost: <span>₹3999 <sub>₹ 5999</sub> </span> </p>
+							<p class="cost">This cost is inclusive of the tablet cost.</p>
+							<p class="per-cost">Per session cost is ₹129</p>
+						</div>
+	
+						<div class="inner-section">
+							<button class="button button1">Book Now</button>
+						</div>
+	
+					</div>
+					<div class="guaranteed-terms-condition">
+						<p> You can also avail a 8 inch and 10 inch tablet with your subscription </p>
+						<p> Guaranteed <u> terms & conditions </u> apply <sup>*</sup> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/js/jquery.min.js" defer></script>
+	<script src="assets/js/custom.js" defer></script>
+</body>
+
+</html>
